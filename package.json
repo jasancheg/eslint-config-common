@@ -1,0 +1,36 @@
+{
+  "name": "eslint-config-common",
+  "version": "1.0.0",
+  "description": "Usual ESLint config for common styleguide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasancheg/eslint-config-common.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": {
+    "name": "Jose Antonio Sanchez",
+    "email": "jasancheg@gmail.com",
+    "url": "http://inideaweb.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasancheg/eslint-config-common/issues"
+  },
+  "homepage": "https://github.com/jasancheg/eslint-config-common#readme",
+  "peerDependecies": {
+    "eslint": "^3.13.1",
+    "eslint-plugin-fetch": "0.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-no-require-lodash": "^1.1.0",
+    "eslint-plugin-prefer-spread": "^1.0.3",
+    "eslint-plugin-react": "^6.1.2",
+    "eslint-plugin-more": "^0.1.1"
+  }
+}
