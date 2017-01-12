@@ -1,33 +1,57 @@
 {
-  "name": "eslint-config-common",
+  "name": "eslint-config-styleguide",
   "version": "1.0.0",
-  "description": "Usual ESLint config for common styleguide",
+  "description": "Usual ESLint config for common coding Style - ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasancheg/eslint-config-common.git"
+    "url": "git+https://github.com/jasancheg/eslint-config-styleguide.git"
   },
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "JavaScript Common Style",
+    "jsx",
+    "js",
+    "hint",
+    "jscs",
+    "jshint",
+    "lint",
+    "standard",
+    "standard style",
+    "style",
+    "style checker",
+    "style linter",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "JavaScript Standard Style",
+    "JavaScript Coding Style"
   ],
   "author": {
     "name": "Jose Antonio Sanchez",
     "email": "jasancheg@gmail.com",
     "url": "http://inideaweb.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jasancheg/eslint-config-common/issues"
+    "url": "https://github.com/jasancheg/eslint-config-styleguide/issues"
   },
-  "homepage": "https://github.com/jasancheg/eslint-config-common#readme",
-  "peerDependecies": {
+  "homepage": "https://github.com/jasancheg/eslint-config-styleguide#readme",
+  "devDependencies": {
+    "eslint-plugin-promise": "^2.0.1",
+    "tape": "^4.6.0"
+  },
+  "peerDependencies": {
     "eslint": "^3.13.1",
     "eslint-plugin-fetch": "0.0.1",
     "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-no-require-lodash": "^1.1.0",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-react": "^6.1.2",

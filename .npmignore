@@ -1,0 +1,5 @@
+example/
+.DS_Store
+.git*
+project.sublime-project
+project.sublime-workspace

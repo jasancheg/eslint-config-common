@@ -3,6 +3,7 @@ module.exports = {
     './rules/base',
     './rules/fetch',
     './rules/import',
+    './rules/promise',
     './rules/no-require-lodash',
     './rules/prefer-spread',
     './rules/react',
