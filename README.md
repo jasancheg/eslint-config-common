@@ -1,20 +1,22 @@
-eslint-config-styleguide
-----------
-# eslint config for common javascript coding style
+# eslint-config-styleguide
+[![npm version](https://badge.fury.io/js/eslint-config-styleguide.svg)](https://npmjs.org/package/eslint-config-styleguide) [![Dependency Status](https://img.shields.io/david/jasancheg/eslint-config-styleguide.svg?style=flat)](https://david-dm.org/jasancheg/eslint-config-styleguide)
+
+
+**eslint config for common javascript coding style**
 
 Usual ESLint config for common JavaScript coding style. An eslint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs).
 
 
 ## How to use
 
-[1]. Install config with eslint and eslint plugins
+[1] Install config with eslint and eslint plugins
 
 ```sh
 npm install --save-dev eslint-config-styleguide eslint@^3.13.1 eslint-plugin-promise eslint-plugin-fetch eslint-plugin-import eslint-plugin-no-require-lodash eslint-plugin-prefer-spread eslint-plugin-react eslint-plugin-more
 ```
 
 
-[2]. Create own `.eslintrc` and add this to your file:
+[2] Create own `.eslintrc` and add this to your file:
 
 ```json
 {
@@ -30,7 +32,7 @@ Shareable configs are designed to work with the `extends` feature of `.eslintrc`
 
 You can override settings from the shareable config by adding them directly into your `.eslintrc` file.
 
-[3]. Overwrite or extend rules (optional):
+[3] Overwrite or extend rules (optional):
 
 ```json
 {
@@ -47,7 +49,7 @@ You can override settings from the shareable config by adding them directly into
 
 ## Run test
 
-[1]. Run your task on a command shell:
+[1] Run your task on a command shell:
 
 ```sh
 eslint folder-name --ext js, jsx
@@ -59,7 +61,7 @@ or use `--fix` to fix global errors
 eslint client server --ext js, jsx --fix
 ```
 
-[2]. Add your own npm scripts to your package.json:
+[2] Add your own npm scripts to your package.json:
 
 ```json
 {
@@ -72,6 +74,25 @@ eslint client server --ext js, jsx --fix
 }
 ```
 
+
+[3] Using a formatter for friendly display of the results:
+
+```sh
+npm install --save-dev eslint-formatter-pretty
+```
+
+then: 
+
+```json
+{
+  "scripts": {
+    "start": "node service",
+    "test": "npm run lint",
+    "lint": "eslint --format=node_modules/eslint-formatter-pretty client server --ext js,jsx; exit 0",
+    "lint:fix": "eslint --format=node_modules/eslint-formatter-pretty client server --ext js,jsx --fix; exit 0"
+  },
+}
+```
 
 ## Learn more
 

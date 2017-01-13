@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-styleguide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Usual ESLint config for common coding Style - ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
