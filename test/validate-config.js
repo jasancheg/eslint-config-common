@@ -1,17 +1,27 @@
-'use strict';
+'use strict'
 
-var eslint = require('eslint');
-var test = require('tape');
+const eslint = require('eslint')
+const test = require('tape')
 
-test('load config in eslint to validate all rule syntax is correct', function (t) {
-  var CLIEngine = eslint.CLIEngine;
-  var code = 'var foo = 1;\nvar bar = function() {};\nbar(foo);\n';
+//
+const code = `// test code
+const foo = 1;
 
-  var cli = new CLIEngine({
+function double(p) {
+  return p * 2;
+}
+
+double(foo);
+`
+
+test('load config in eslint to validate all rule syntax is correct', t => {
+  const CLIEngine = eslint.CLIEngine
+
+  const cli = new CLIEngine({
     useEslintrc: false,
-    configFile: './rules/base.js'
-  });
+    configFile: './index.js'
+  })
 
-  t.ok(cli.executeOnText(code).errorCount === 0);
-  t.end();
+  t.ok(cli.executeOnText(code).errorCount === 0)
+  t.end()
 })

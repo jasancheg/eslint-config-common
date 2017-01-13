@@ -1,16 +1,14 @@
+'use strict'
 
-'use strict';
+const baseConfig = require('../rules/base')
+const test = require('tape')
 
-const config = require('../');
-const test = require('tape');
+const isObject = obj => typeof obj === 'object' && obj !== null
 
-test('test basic properties of config', function (t) {
-  t.ok(isObject(config.env));
-  t.ok(isObject(config.globals));
-  t.ok(isObject(config.rules));
-  t.end();
+test('test basic properties of config', t => {
+  t.ok(isObject(baseConfig.env))
+  t.ok(isObject(baseConfig.globals))
+  t.ok(isObject(baseConfig.rules))
+  t.end()
 })
 
-function isObject (obj) {
-  return typeof obj === 'object' && obj !== null;
-}

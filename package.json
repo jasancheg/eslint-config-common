@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-styleguide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Usual ESLint config for common coding Style - ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
@@ -44,7 +44,15 @@
   },
   "homepage": "https://github.com/jasancheg/eslint-config-styleguide#readme",
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.13.1",
+    "eslint-plugin-fetch": "0.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-more": "^0.1.1",
+    "eslint-plugin-no-require-lodash": "^1.1.0",
+    "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-react": "^6.9.0",
     "tape": "^4.6.0"
   },
   "peerDependencies": {

@@ -50,7 +50,7 @@ You can override settings from the shareable config by adding them directly into
 [1]. Run your task on a command shell:
 
 ```sh
-eslint client server --ext js, jsx
+eslint folder-name --ext js, jsx
 ```
 
 or use `--fix` to fix global errors
